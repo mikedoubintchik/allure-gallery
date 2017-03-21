@@ -15,4 +15,4 @@ There is none, so feel free to customize as needed!
 [See on CodePen](http://codepen.io/allurewebsolutions/pen/MKyLLm)
 
 # Sreenshots
-![Alt text](screenshot.png)
+![Alt text](screenshot-1.png/screenshot.png)

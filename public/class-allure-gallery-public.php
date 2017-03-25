@@ -129,26 +129,29 @@ class Allure_Gallery_Public
                     };
 
                     return promise;
-                };
+                }
 
-                var intSrc = allureGallery.find('img:first-child').attr('src').replace('-150x150', '');
+                if (allureGallery.length > 0) {
+                    var intSrc = allureGallery.find('img:first-child').attr('src').replace('-150x150', '');
 
-                getMeta(intSrc).then(function (data) {
-                    var ratio = data.h / data.w;
-                    var height = $('.gallery-big').width() * ratio;
-                    $('.gallery-big').css('background-image', 'url(' + intSrc + ')').css('height', height + 'px');
-                });
-
-                allureGallery.on('click', 'img', function (e) {
-                    e.preventDefault();
-                    var imgSrc = $(this).attr('src').replace('-150x150', ''); // Stores the img's src into a var
-                    getMeta(imgSrc).then(function (data) {
+                    getMeta(intSrc).then(function (data) {
                         var ratio = data.h / data.w;
                         var height = $('.gallery-big').width() * ratio;
-                        $('.gallery-big').fadeIn().css('background-image', 'url(' + imgSrc + ')').css('height', height + 'px');
+                        $('.gallery-big').css('background-image', 'url(' + intSrc + ')').css('height', height + 'px');
                     });
 
-                });
+                    allureGallery.on('click', 'img', function (e) {
+                        e.preventDefault();
+                        var imgSrc = $(this).attr('src').replace('-150x150', ''); // Stores the img's src into a var
+                        getMeta(imgSrc).then(function (data) {
+                            var ratio = data.h / data.w;
+                            var height = $('.gallery-big').width() * ratio;
+                            $('.gallery-big').fadeIn().css('background-image', 'url(' + imgSrc + ')').css('height', height + 'px');
+                        });
+
+                    });
+                }
+
             });
         </script>
 
@@ -158,6 +161,7 @@ class Allure_Gallery_Public
                 margin: 0;
                 padding: 0;
                 cursor: pointer;
+                box-sizing: border-box;
             }
 
             .gallery-big {
@@ -166,6 +170,17 @@ class Allure_Gallery_Public
                 background-size: contain;
                 background-position: center center;
                 background-repeat: no-repeat;
+            }
+
+            .gallery a img {
+                width: 100%;
+                max-width: 80%;
+                height: auto;
+                max-height: 80%;
+                padding: 5px;
+                background-color: #fff;
+                border: 1px solid #e5e5e5!important;
+                transition: all 0.2s linear;
             }
         </style>
 
@@ -300,7 +315,6 @@ class Allure_Gallery_Public
             #{$selector} img {
                 width: 100%;
                 height: auto;
-                border: 2px solid #cfcfcf;
             }
             #{$selector} .gallery-caption {
                 margin-left: 0;

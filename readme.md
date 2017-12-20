@@ -1,18 +1,26 @@
-# Installation
-1. Clone the repo into the /wp-content/plugins/ folder using ```git clone https://github.com/allurewebsolutions/allure-gallery.git```
-2. Go into the WordPress Dashboard and activate the plugin
+#=== Allure Gallery ===
+Contributors: allurewebsolutions
+Tags: gallery
+Donate link: https://allurewebsolutions.com/product/donation
+Requires at least: 3.0.1
+Tested up to: 4.9.1
+Stable tag: 1.2
 
-# Usage
-1. Add a gallery as normal using the "Add Media" button in the visual editor
-2. In the gallery settings, you will see an extra option saying "Activate Allure Gallery"
-3. Select "yes" for that option
-4. That's all :)
+The Allure Gallery plugin provides functionality for the native WordPress gallery to have one image on top with thumbnails underneath. Fully responsive.
 
-# Styling
-There is none, so feel free to customize as needed!
+##== Description ==
+The Allure Gallery plugin provides functionality for the native WordPress gallery to have one image on top with thumbnails underneath. Fully responsive.
 
-# Methodology Example
-[See on CodePen](http://codepen.io/allurewebsolutions/pen/MKyLLm)
+##== Installation ==
+1) Activate the plugin
+2) Insert a native WordPress gallery on a page
+3) Select \"yes\" from dropdown of gallery options to activate the functionality
 
-# Sreenshots
-![Alt text](screenshot-1.png/screenshot.png)
+##== Screenshots ==
+1. Allure Gallery vs Native WP Gallery
+2. This shows the settings on the native gallery where you can activate the plugin
+
+##== Changelog ==
+1.0: Initial release
+1.1: Bug fixes
+1.2: Bug fixes

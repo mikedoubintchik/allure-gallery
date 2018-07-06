@@ -16,7 +16,7 @@
  * Plugin Name:       Allure Gallery
  * Plugin URI:        https://allure-gallery.allureprojects.com
  * Description:       This plugin allows you to change the native wordpress gallery into one with a large top image and thumbnails underneath.
- * Version:           1.2
+ * Version:           1.2.1
  * Author:            Allure Web Solutions
  * Author URI:        https://allurewebsolutions.com
  * License:           GPL-2.0+

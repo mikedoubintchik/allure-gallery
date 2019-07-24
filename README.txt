@@ -2,14 +2,15 @@
 Contributors: allurewebsolutions
 Tags: gallery
 Donate link: https://allurewebsolutions.com/product/donation
-Requires at least: 3.0.1
-Tested up to: 4.9.7
+Tested up to: 5.2.2
 Stable tag: 1.2.1
 
 The Allure Gallery plugin provides functionality for the native WordPress gallery to have one image on top with thumbnails underneath. Fully responsive.
 
 == Description ==
 The Allure Gallery plugin provides functionality for the native WordPress gallery to have one image on top with thumbnails underneath. Fully responsive.
+
+[DEMO](https://allure-gallery.allureprojects.com/)
 
 == Installation ==
 1) Activate the plugin
@@ -21,6 +22,6 @@ The Allure Gallery plugin provides functionality for the native WordPress galler
 2. This shows the settings on the native gallery where you can activate the plugin
 
 == Changelog ==
-1.0: Initial release
-1.1: Bug fixes
 1.2: Bug fixes
+1.1: Bug fixes
+1.0: Initial release

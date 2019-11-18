@@ -16,7 +16,7 @@
  * Plugin Name:       Allure Gallery
  * Plugin URI:        https://allure-gallery.allureprojects.com
  * Description:       This plugin allows you to change the native wordpress gallery into one with a large top image and thumbnails underneath.
- * Version:           1.2.1
+ * Version:           1.2.2
  * Author:            Allure Web Solutions
  * Author URI:        https://allurewebsolutions.com
  * License:           GPL-2.0+
@@ -26,7 +26,7 @@
  */
 
 // If this file is called directly, abort.
-if ( ! defined( 'WPINC' ) ) {
+if (!defined('WPINC')) {
 	die;
 }
 
@@ -34,8 +34,9 @@ if ( ! defined( 'WPINC' ) ) {
  * The code that runs during plugin activation.
  * This action is documented in includes/class-allure-gallery-activator.php
  */
-function activate_allure_gallery() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-allure-gallery-activator.php';
+function activate_allure_gallery()
+{
+	require_once plugin_dir_path(__FILE__) . 'includes/class-allure-gallery-activator.php';
 	Allure_Gallery_Activator::activate();
 }
 
@@ -43,19 +44,20 @@ function activate_allure_gallery() {
  * The code that runs during plugin deactivation.
  * This action is documented in includes/class-allure-gallery-deactivator.php
  */
-function deactivate_allure_gallery() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-allure-gallery-deactivator.php';
+function deactivate_allure_gallery()
+{
+	require_once plugin_dir_path(__FILE__) . 'includes/class-allure-gallery-deactivator.php';
 	Allure_Gallery_Deactivator::deactivate();
 }
 
-register_activation_hook( __FILE__, 'activate_allure_gallery' );
-register_deactivation_hook( __FILE__, 'deactivate_allure_gallery' );
+register_activation_hook(__FILE__, 'activate_allure_gallery');
+register_deactivation_hook(__FILE__, 'deactivate_allure_gallery');
 
 /**
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-allure-gallery.php';
+require plugin_dir_path(__FILE__) . 'includes/class-allure-gallery.php';
 
 /**
  * Begins execution of the plugin.
@@ -66,10 +68,10 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-allure-gallery.php';
  *
  * @since    1.0.0
  */
-function run_allure_gallery() {
+function run_allure_gallery()
+{
 
 	$plugin = new Allure_Gallery();
 	$plugin->run();
-
 }
 run_allure_gallery();

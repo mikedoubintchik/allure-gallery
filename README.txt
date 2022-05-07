@@ -2,7 +2,7 @@
 Contributors: allurewebsolutions
 Tags: gallery
 Donate link: https://allurewebsolutions.com/product/donation
-Tested up to: 5.6
+Tested up to: 6.0
 Stable tag: 1.2.2
 
 The Allure Gallery plugin provides functionality for the native WordPress gallery to have one image on top with thumbnails underneath. Fully responsive.
